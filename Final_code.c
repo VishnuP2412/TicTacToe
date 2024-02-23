@@ -13,9 +13,11 @@ void print(int g[][3]);
 void check(int g[][3], int x);
 
 
+char *p1,*p2;
+
+
 void main()
 {
-    char *p1,*p2;
     int sp;
     int c;
     p1=malloc(100);
@@ -25,7 +27,7 @@ void main()
     {
      printf("\n\n");
     } 
-    printf("Press 1 to start the game and 2 to see the rules.  \n");
+    printf("Press 1 to start the game and 2 to see the rules  \n");
     scanf("%d", &c);
     if(c==2)
     {
@@ -38,10 +40,10 @@ void main()
     printf("\nEnter a player 1 name: ");
     //reads name of player 1
     while((getchar())!='\n');
-    gets(p1);
+    fgets(p1,100, stdin);
     printf("\nEnter a player 2 name: ");
     //reads name of player 2
-    gets(p2);
+    fgets(p2, 100, stdin);
     if((strlen(p1)==0)||(strlen(p2)==0))
     {
         printf("\nInvalid Name. Try again");
@@ -149,13 +151,13 @@ void check(int g[][3],int x)
      {
       if(g[0][0]==1)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
       else
       if(g[0][0]==2)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
      }
@@ -164,13 +166,13 @@ void check(int g[][3],int x)
      {
       if(g[0][0]==1)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
       else
       if(g[0][0]==2)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
      }
@@ -179,13 +181,13 @@ void check(int g[][3],int x)
      {
       if(g[0][0]==1)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
       else
       if(g[0][0]==2)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
      }
@@ -194,13 +196,13 @@ void check(int g[][3],int x)
      {
       if(g[1][0]==1)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
       else
       if(g[1][0]==2)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
      }
@@ -209,13 +211,13 @@ void check(int g[][3],int x)
      {
       if(g[0][1]==1)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
       else
       if(g[0][1]==2)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
      }
@@ -224,13 +226,13 @@ void check(int g[][3],int x)
      {
       if(g[0][2]==1)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
       else
       if(g[0][2]==2)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
      }
@@ -239,13 +241,13 @@ void check(int g[][3],int x)
      {
       if(g[0][2]==1)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
       else
       if(g[0][2]==2)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
      }
@@ -254,13 +256,13 @@ void check(int g[][3],int x)
      {
       if(g[2][0]==1)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
       else
       if(g[2][0]==2)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
      }
@@ -272,13 +274,13 @@ void check(int g[][3],int x)
      {
       if(g[0][0]==1)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
       else
       if(g[0][0]==2)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
      }
@@ -287,13 +289,13 @@ void check(int g[][3],int x)
      {
       if(g[0][0]==1)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
       else
       if(g[0][0]==2)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
      }
@@ -302,13 +304,13 @@ void check(int g[][3],int x)
      {
       if(g[0][0]==1)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
       else
       if(g[0][0]==2)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
      }
@@ -317,13 +319,13 @@ void check(int g[][3],int x)
      {
       if(g[1][0]==1)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
       else
       if(g[1][0]==2)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
      }
@@ -332,13 +334,13 @@ void check(int g[][3],int x)
      {
       if(g[0][1]==1)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
       else
       if(g[0][1]==2)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
      }
@@ -347,13 +349,13 @@ void check(int g[][3],int x)
      {
       if(g[0][2]==1)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
       else
       if(g[0][2]==2)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
      }
@@ -362,13 +364,13 @@ void check(int g[][3],int x)
      {
       if(g[0][2]==1)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
       else
       if(g[0][2]==2)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
      }
@@ -377,13 +379,13 @@ void check(int g[][3],int x)
      {
       if(g[2][0]==1)
        {
-         printf("\n player 2 has won");
+         printf("\n Winner is %s", p2);
          exit(0);
        }
       else
       if(g[2][0]==2)
        {
-         printf("\n player 1 has won");
+         printf("\n Winner is %s", p1);
          exit(0);
        }
      }
