@@ -151,7 +151,7 @@ void check(int g[][3],int x)
      {
       if(g[0][0]==1)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
       else
@@ -166,7 +166,7 @@ void check(int g[][3],int x)
      {
       if(g[0][0]==1)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
       else
@@ -280,7 +280,7 @@ void check(int g[][3],int x)
       else
       if(g[0][0]==2)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
      }
@@ -295,7 +295,7 @@ void check(int g[][3],int x)
       else
       if(g[0][0]==2)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
      }
@@ -310,7 +310,7 @@ void check(int g[][3],int x)
       else
       if(g[0][0]==2)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
      }
@@ -325,7 +325,7 @@ void check(int g[][3],int x)
       else
       if(g[1][0]==2)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
      }
@@ -340,7 +340,7 @@ void check(int g[][3],int x)
       else
       if(g[0][1]==2)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
      }
@@ -355,7 +355,7 @@ void check(int g[][3],int x)
       else
       if(g[0][2]==2)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
      }
@@ -370,7 +370,7 @@ void check(int g[][3],int x)
       else
       if(g[0][2]==2)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
      }
@@ -385,7 +385,7 @@ void check(int g[][3],int x)
       else
       if(g[2][0]==2)
        {
-         printf("\n %s has won", *p1);
+         printf("\n %p has won", *p1);
          exit(0);
        }
      }
